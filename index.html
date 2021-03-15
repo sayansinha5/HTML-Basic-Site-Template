@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<head>
+    <title>Hello  World | Home</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+<!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="css/bootstrap.min.css" />
+<!-- FontAwesome CSS -->
+        <link rel="stylesheet" href="css/fontawesome-all.min.css" />
+<!-- StyleSheets -->
+        <link rel="stylesheet" href="styles.css" />
+        
+<!-- Custome Styles -->
+        <style>
+
+            body{
+                background-color: #2ecc71;
+            }
+
+            .nav-link{
+                background-color: #27ae60;
+                color:#fff;
+                padding-top:9px;
+            }
+
+            .nav-link ul li {
+                display:inline-block;
+                list-style: none;
+            }
+            
+            .nav-link ul li a{
+                color:#fff;
+                text-decoration:none;
+                position: relative;
+                margin: 0 8px 0 8px;
+            }
+
+            .brand{
+                color:#fff; 
+                font-size: 40px;
+            }
+
+            .brand span{
+                color: #69F0AE;
+            }
+
+            .brand-link ul li{
+                display:inline-block;
+                list-style: none;
+            }
+
+            .brand-link ul li a{
+                color:#fff;
+                text-decoration:none;
+                position: relative;
+                margin: 0 8px 0 8px;
+                font-size:30px;
+                opacity:0.6;
+            }
+            .brand-link ul li a:hover{
+                opacity:1;
+            }
+
+            .hr{
+                border-top: 0.2px dashed #fff;
+                border-bottom: 0.2px dashed #fff;
+            }
+
+            .hr-grey{
+                border-top: 0.5px dashed grey;
+            }
+
+            .hr-white{
+                border-top: 0.5px dashed #fff;
+            }
+
+            .links ul li{
+                display:inline-block;
+                list-style: none;
+                padding: 8px 0 0 0;
+            }
+
+            .links ul li a:hover{
+                opacity: 1;
+            }
+
+            .links ul li a{
+                color:#fff;
+                text-decoration:none;
+                position: relative;
+                margin-right: 12px;
+                font-size:18px;
+                opacity:0.6;
+            }
+
+            .links ul li #active{
+                opacity:1;
+            }
+
+            .text-over-image{
+                position: absolute;
+                top: 0;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                opacity: 0;
+                transition: all 0.5s ease;
+                background-color: #e74c3c;
+            }
+
+            .text-over-image:hover{
+                opacity: 0.8;
+            }
+
+            .text-overlay{
+                color:#fff;
+                top:50%;
+                left:50%;
+                padding-top:40%;
+            }
+
+            .bg-grey{
+                background-color: #ECF0F1;
+            }
+
+            .page-foot-links ul li a{
+                color:green;
+            }
+            
+            .page-foot-links ul li{
+                font-size:16px;
+            }
+
+            .shadow{
+                box-shadow: 5px 5px 15px #000;
+            }
+
+            .footer-settings{
+                color:#fff;
+                letter-spacing: 0.5px;
+            }
+
+            .footer-settings h4{
+                font-size:22px;
+            }
+
+            .foot-links li{
+                list-style: none;
+                margin-top: 4px;
+            }
+
+            @media (max-width: 720px){
+           *{
+                font-size: 10px;
+                }
+            }
+        </style>
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="row nav-link nunito">
+            <div class="col-md-1"></div>
+            <div class="col-md-10">
+                <text class="pull-left">super@mymail.com</text>
+                <ul class="pull-right">
+                    <li><a href="#">FAQ</a></li>
+                    <li>|</li>
+                    <li><a href="#">Blog</a></li>
+                    <li>|</li>
+                    <li><a href="#">Pages</a></li>
+                </ul>
+            </div>
+            <div class="col-md-1"></div>
+        </div>
+
+        <br /><br />
+
+        <div class="row brand-link">
+            <div class="col-md-1"></div>
+            <div class="col-md-10">
+                <text class="pull-left brand roboto">Hello <span>| World</span></text>
+                <ul class="pull-right">
+                    <li><a href="#"><span class="fab fa-facebook"></span></a></li>
+                    <li><a href="#"><span class="fab fa-google-plus"></span></a></li>
+                    <li><a href="#"><span class="fab fa-twitter"></span></a></li>
+                    <li><a href="#"><span class="fab fa-dribbble"></span></a></li>
+                    <li><a href="#"><span class="fab fa-vimeo"></span></a></li>
+                </ul>
+            </div>
+            <div class="col-md-1"></div>
+        </div> 
+
+        <br />
+
+        <div class="row links">
+            <div class="col-md-1"></div>
+            <div class="col-md-10 hr roboto">
+                <ul class="text-center">
+                    <li><a  id="active" href="index.html">HOME</a></li>
+                    <li><a href="project.html">PROJECTS</a></li>
+                    <li><a href="team.html">OUR TEAM</a></li>
+                </ul>
+            </div>
+            <div class="col-md-1"></div>
+        </div>
+
+        <br /><br />
+
+        <div class="row">
+            <div class="col-md-1"></div>
+            <div class="col-md-10 nunito">
+                <div class="jumbotron bg-grey shadow">
+
+                    <text style="font-size:28px;">Introduction</text>
+                    <div class="hr-grey"></div>
+
+                    <br />
+
+                    <div class="row">
+                        <div class="col-md-12">
+                            <img src="img/1.jpg" class="pull-left col-md-12" style="width:25%; height:25%">
+                            <p style="font-size: 16px;">Lorem Ipsum Dolor Sit Amet Lorem Ipsum Dolor Sit Amet Lorem Ipsum Dolor Sit Amet Lorem Ipsum Dolor Sit Amet Lorem Ipsum Dolor Sit Amet Lorem Ipsum Dolor Sit Amet Lorem Ipsum Dolor Sit Amet Lorem Ipsum Dolor Sit Amet Lorem Ipsum Dolor Sit Amet Lorem Ipsum Dolor Sit Amet Lorem Ipsum Dolor Sit Amet Lorem Ipsum Dolor Sit Amet </p>
+                        </div>
+                    </div>
+
+                    <div class="row page-foot-links roboto">
+                        <div class="col-md-6 pull-left">
+                            <h2>WHY US?</h2>
+                            <div class="hr-grey"></div>
+                            <h4>This is our Passion of Lorem Ipsum</h4>
+                            <h5>This is the case of our work to be done</h5>
+                        </div>
+                        <div class="col-md-6 pull-left">
+                            <h2>WHAT WE DO?</h2>
+                            <div class="hr-grey"></div>
+                            <br />
+                            <ul class="pull-left">
+                                <li><a href="#">Lorem Ipsum</a> Dolor Sit Amet</li>
+                                <li><a href="#">Lorem Ipsum</a> Dolor Sit Amet</li>
+                                <li><a href="#">Lorem Ipsum</a> Dolor Sit Amet</li>
+                                <li><a href="#">Lorem Ipsum</a> Dolor Sit Amet</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="col-md-1"></div>
+        </div>
+    </div>
+
+    <br /><br />
+
+    <footer class="footer-settings">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-1"></div>
+                <div class="col-md-10">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <h4 class="roboto">GET IN TOUCH</h4>
+                            <div class="hr-white"></div>
+                            <br />
+                            <ul class="foot-links nunito">
+                                <li><span class="fa fa-home"></span> Lorem Street, 123 Ipsum Avenue, IND</li>
+                                <li><span class="fa fa-phone"></span> +12 345 678 8975</li>
+                                <li><span class="fa fa-envelope"></span> super@mymail.com</li>
+                            </ul>
+                        </div>
+                        <div class="col-md-4">
+                            <h4 class="roboto">ABOUT US</h4>
+                            <div class="hr-white"></div>
+                            <br />
+                            <h5 class="nunito">Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum </h5>
+                        </div>
+                        <div class="col-md-4">
+                            <h4 class="roboto">GALLERY</h4>
+                            <div class="hr-white"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-1"></div>
+            </div>
+
+            <br /><br />
+
+            <div class="row" style="background-color:#27ae60;">
+
+                <br />
+
+                <div class="col-md-12">
+                    <p class="text-center nunito">Made with <span class="fa fa-heart"></span> and <span class="fa fa-coffee"></span> by Sayan Sinha &copy; 2017</p>
+                </div>
+            </div>
+        </div>
+
+    </footer>
+
+
+    
+    <!-- jQuery JS -->
+    <script src="js/jquery-1.12.1.min.js"></script>   
+
+    <!-- Bootstrap JS -->
+    <script src="js/bootstrap.min.js"></script>
+</body>
